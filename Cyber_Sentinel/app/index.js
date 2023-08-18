@@ -16,19 +16,22 @@ const styles = StyleSheet.create(
             color: 'white'
         },
         container:{
-            flex: 1,
+            width: '100%',
+            height: '100%'
         },
         form_container:{
-            flex:0.5
+            flex:0.5,
+            backgroundColor: 'red',
+            width: '100%',
         }
     }
 )
 
 const app = () => {
     return (
-        <SafeAreaView style={{backgroundColor: 'darkblue'}}>
-            <View>
-                <Text style={styles.heading}>CYBER SENTINEL WORKSHOP</Text>
+        <View style={{backgroundColor: 'darkblue'}}>
+            <View style={styles.container}>
+                <Text style={styles.heading}>CYBER SENTINEL</Text>
                 <View style={styles.form_container}>
                     <Text>Username/Email</Text>
                     <TextInput style={styles.input_style} defaultValue='Username'></TextInput>
@@ -36,13 +39,14 @@ const app = () => {
                     <TextInput style={styles.input_style}defaultValue='Password'></TextInput>
                     <Button 
                         title='Login'
+                        style={{width: '30%', height: '10%'}}
                     />
                 </View>
                 <View style={styles.form_container}>
                     <Text>Forgot password?</Text>
                 </View>
             </View>
-        </SafeAreaView>
+        </View>
     );
 }
 
