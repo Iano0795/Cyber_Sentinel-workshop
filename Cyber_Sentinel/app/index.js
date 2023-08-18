@@ -1,4 +1,4 @@
-import {View, Text, SafeAreaView, ScrollView, TextInput, StyleSheet, Button} from 'react-native';
+import {View, Text, SafeAreaView, ScrollView, TextInput, StyleSheet, Button, TouchableOpacity} from 'react-native';
 
 const styles = StyleSheet.create(
     {
@@ -48,6 +48,12 @@ const app = () => {
             </View>
         </View>
     );
+}
+
+const LoginButton = () => {
+    <TouchableOpacity >
+        <Text>Login</Text>
+    </TouchableOpacity>
 }
 
 export default app;
